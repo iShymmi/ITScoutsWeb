@@ -1,0 +1,27 @@
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 8px 16px;
+    width: 80%;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.nav-container {
+    width: 100%;
+    background-color: #1D3354;
+}
+
+.overlay-light {
+    background-color: #FFF;
+}
+
+.main-logo {
+    height: 26px;
+    margin: 0 4px 0 0;
+}
+
+.space-between {
+    flex-grow: 1;
+}

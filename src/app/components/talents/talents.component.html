@@ -1,0 +1,33 @@
+<div class="main-talents">
+    <div class="filters-main">
+        <mat-form-field>
+            <mat-icon matPrefix>search</mat-icon>
+            <mat-label>Search</mat-label>
+            <input matInput #search placeholder="Search" type="text">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Location</mat-label>
+            <mat-select>
+              <mat-option value="option">Gdansk</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Filters</mat-label>
+            <mat-select>
+              <mat-option value="option">Gdansk</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <mat-divider></mat-divider>
+
+    <div class="talents-container">
+        <app-talent-card></app-talent-card>
+        <app-talent-card></app-talent-card>
+        <app-talent-card></app-talent-card>
+        <app-talent-card></app-talent-card>
+        <app-talent-card></app-talent-card>
+        <app-talent-card></app-talent-card>
+    </div>
+</div>
