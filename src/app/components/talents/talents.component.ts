@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Talent } from 'src/app/common/Talent';
+import { TalentService } from 'src/app/service/talent.service';
 
 @Component({
   selector: 'app-talents',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TalentsComponent implements OnInit {
 
-  constructor() { }
+  talents: Talent[];
+
+  constructor(private talentService: TalentService) { }
 
   ngOnInit(): void {
+    this.listTalents();
+  }
+
+  listTalents() {
+    this.talentService.getTalentList().subscribe(
+      data => {
+        this.talents = data;
+      }
+    )
   }
 
 }

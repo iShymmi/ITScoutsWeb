@@ -7,6 +7,8 @@ import { MaterialModule } from './material/material.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TalentsComponent } from './components/talents/talents.component';
 import { TalentCardComponent } from './components/talent-card/talent-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TalentService } from './service/talent.service';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,10 @@ import { TalentCardComponent } from './components/talent-card/talent-card.compon
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [TalentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

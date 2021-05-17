@@ -23,11 +23,6 @@
     <mat-divider></mat-divider>
 
     <div class="talents-container">
-        <app-talent-card></app-talent-card>
-        <app-talent-card></app-talent-card>
-        <app-talent-card></app-talent-card>
-        <app-talent-card></app-talent-card>
-        <app-talent-card></app-talent-card>
-        <app-talent-card></app-talent-card>
+            <app-talent-card *ngFor="let talent of talents" [talentData]="talent"></app-talent-card>
     </div>
 </div>
